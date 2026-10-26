@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e3973a4-bcac-4606-ab84-05969215b9fb" name="Changes" comment="Initial commit&#10;Loaded SampleSuperstore data&#10;Kaggle token used via CLI to download data&#10;.kaggle/kaggle.json (Legacy)">
-      <change afterPath="$PROJECT_DIR$/category_bar_graph.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category_scatter_plot.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/states_regions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_visuals.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/categories.py" beforeDir="false" afterPath="$PROJECT_DIR$/categories.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_bar_graph.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_scatter_plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/insight_visuals.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/states_regions.py" beforeDir="false" afterPath="$PROJECT_DIR$/states_regions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +43,11 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.categories.executor": "Run",
+    "Python.category_bar_graph.executor": "Run",
     "Python.category_scatter_plot.executor": "Run",
+    "Python.category_visuals.executor": "Run",
+    "Python.discount_profit_scatter_plot.executor": "Run",
+    "Python.insight_visuals.executor": "Run",
     "Python.main.executor": "Run",
     "Python.states_regions.executor": "Run",
     "Python.visuals.executor": "Run",

@@ -28,3 +28,35 @@ profit_by_state = (
 print(profit_by_state.head(10))
 print("Top 10 Worst Selling States")
 print(profit_by_state.tail(10))
+
+
+top_states = (
+    df.groupby("State")["Profit"]
+    .sum()
+    .sort_values(ascending=False)
+    .head(10)
+)
+top_states.plot(
+    kind="barh",
+    figsize=(10,6),
+    color="teal"
+)
+
+plt.title("Top 10 States by Profit")
+plt.xlabel("Profit ($)")
+plt.show()
+
+bottom_states = (
+    df.groupby("State")["Profit"]
+    .sum()
+    .sort_values()
+    .head(10)
+)
+bottom_states.plot(
+    kind="barh",
+    figsize=(10,6),
+    color="red"
+)
+plt.title("Bottom 10 States by Profit")
+plt.xlabel("Profit ($)")
+plt.show()
