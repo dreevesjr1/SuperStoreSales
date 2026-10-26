@@ -25,9 +25,16 @@ category_profit = (
     .sum()
     .sort_values(ascending=False)
 )
-print(category_profit)
+# print(category_profit)
 
 category_profit.plot(kind='bar')
 plt.title('Profit by Category')
 plt.ylabel('Profit')
 plt.show()
+
+subcategory_profit = (
+    df.groupby('Sub-Category')['Profit']
+    .sum()
+    .sort_values()
+)
+print(subcategory_profit.head(10))

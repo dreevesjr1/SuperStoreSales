@@ -4,19 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e3973a4-bcac-4606-ab84-05969215b9fb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/SuperStoreSales.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="3e3973a4-bcac-4606-ab84-05969215b9fb" name="Changes" comment="Initial commit&#10;Loaded SampleSuperstore data&#10;Kaggle token used via CLI to download data&#10;.kaggle/kaggle.json (Legacy)">
+      <change afterPath="$PROJECT_DIR$/categories.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,16 +28,21 @@
   "associatedIndex": 5
 }]]></component>
   <component name="ProjectId" id="3LEpSKIBSVX1s0EoIbGZ1V9YN2V" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master"
   }
 }]]></component>
@@ -53,6 +61,31 @@
       <option name="presentableId" value="Default" />
       <updated>1793029080138</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit&#10;Loaded SampleSuperstore data&#10;Kaggle token used via CLI to download data&#10;.kaggle/kaggle.json (Legacy)">
+      <option name="closed" value="true" />
+      <created>1793034307950</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1793034307950</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit&#10;Loaded SampleSuperstore data&#10;Kaggle token used via CLI to download data&#10;.kaggle/kaggle.json (Legacy)">
+      <option name="closed" value="true" />
+      <created>1793034338414</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1793034338414</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Initial commit&#10;Loaded SampleSuperstore data&#10;Kaggle token used via CLI to download data&#10;.kaggle/kaggle.json (Legacy)">
+      <option name="closed" value="true" />
+      <created>1793034350593</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1793034350593</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -65,5 +98,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit&#10;Loaded SampleSuperstore data&#10;Kaggle token used via CLI to download data&#10;.kaggle/kaggle.json (Legacy)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit&#10;Loaded SampleSuperstore data&#10;Kaggle token used via CLI to download data&#10;.kaggle/kaggle.json (Legacy)" />
   </component>
 </project>
