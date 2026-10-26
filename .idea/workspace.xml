@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e3973a4-bcac-4606-ab84-05969215b9fb" name="Changes" comment="Initial commit&#10;Loaded SampleSuperstore data&#10;Kaggle token used via CLI to download data&#10;.kaggle/kaggle.json (Legacy)">
-      <change afterPath="$PROJECT_DIR$/categories.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_bar_graph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_scatter_plot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/states_regions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/categories.py" beforeDir="false" afterPath="$PROJECT_DIR$/categories.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +41,11 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.categories.executor": "Run",
+    "Python.category_scatter_plot.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.states_regions.executor": "Run",
+    "Python.visuals.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",

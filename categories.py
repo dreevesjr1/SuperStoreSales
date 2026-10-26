@@ -19,9 +19,18 @@ plt.title('Profit by Category')
 plt.ylabel('Profit')
 plt.show()
 
+#Profitable Sub-Category
 subcategory_profit = (
     df.groupby('Sub-Category')['Profit']
     .sum()
     .sort_values()
 )
 print(subcategory_profit.head(10))
+
+#Unprofitable Sub-Category
+losses = (
+    df.groupby("Sub-Category")["Profit"]
+    .sum()
+    .sort_values()
+)
+print(losses.head(10))
