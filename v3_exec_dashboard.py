@@ -12,7 +12,7 @@ df = pd.read_csv("SampleSuperstore.csv")
 app = Dash(__name__)
 app.title="Superstore Executive Dashboard"
 
-def create_api_card(title, value, color):
+def create_kpi_card(title, value, color):
     return html.Div(
         [html.H4(title), html.H2(value)],
         style={
@@ -22,7 +22,7 @@ def create_api_card(title, value, color):
             "boxShadow": "0px 4px 10px rgba(0,0,0,0.2)",
             "width": "18%",
             "textAlight": "center",
-            "color": "white"
+            "color": "black"
         }
     )
 
@@ -108,10 +108,10 @@ app.layout = html.Div(
 
      ],
     style={"padding": "20px",
-           "backgroundColor": "#F5F7FA"}
+           "backgroundColor": "#f5f7fa"}
 )
 
-app.callback(
+@app.callback(
     [
         Output("kpi-container", "children"),
         Output("profit-category", "figure"),
@@ -141,4 +141,50 @@ def update_dashboard(region,category,segment):
     profit_margin = (total_profit /  total_sales * 100)
     total_orders = len(filtered_df)
 
-    
+    cards = [
+        create_kpi_card("Sales", f"${total_sales:,.2f}","#121212"),
+        create_kpi_card("Profit", f"${total_profit:,.2f}", "#121212"),
+        create_kpi_card("Margin", f"${profit_margin:,.2f}", "#121212"),
+        create_kpi_card("Orders",f"{total_orders}","#121212")
+    ]
+
+    category_profit = (filtered_df.groupby("Category")["Profit"].sum().reset_index())
+    fig_category = px.bar(category_profit,
+                          x="Category",
+                          y="Profit",
+                          title="Profit by Category")
+
+    region_sales = (filtered_df.groupby("Region")["Sales"].sum().reset_index())
+    fig_region = px.bar(region_sales,
+                        x="Region",
+                        y="Sales",
+                        title="Sales by Region")
+
+    top_states = (filtered_df.groupby("State")["Profit"].sum().sort_values(ascending=False).head(20).reset_index())
+    fig_states = px.bar(top_states,
+                       x="Profit",
+                       y="State",
+                       orientation="h",
+                       title="Top 20 States")
+
+    fig_discount = px.scatter(filtered_df,
+                              x="Discount",
+                              y="Profit",
+                              color="Category",
+                              title="Discount vs Profit")
+
+    best_region = (filtered_df.groupby("Region")["Profit"].sum().idxmax())
+
+    best_category = (filtered_df.groupby("Category")["Profit"].sum().idxmax())
+
+    insight_panel = html.Div([
+        html.H3("Executive Insights"),
+        html.P(f"Top Region: {best_region}"),
+        html.P(f"Top Category: {best_category}"),
+        html.P(f"Profit Margin: {profit_margin:.2f}%")
+    ])
+
+    return(cards, fig_category, fig_region, fig_states, fig_discount, insight_panel)
+
+if __name__ == "__main__":
+    app.run(debug=True, use_reloader=False)
