@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e3973a4-bcac-4606-ab84-05969215b9fb" name="Changes" comment="Initial commit&#10;Loaded SampleSuperstore data&#10;Kaggle token used via CLI to download data&#10;.kaggle/kaggle.json (Legacy)">
-      <change afterPath="$PROJECT_DIR$/v2_exec_dashboard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v3_exec_dashboard.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
